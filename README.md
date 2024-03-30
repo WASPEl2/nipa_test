@@ -26,7 +26,7 @@ To run the project with Docker:
    ```bash
    docker pull ghcr.io/waspel2/nipa_test/test-frontend:v1.0
    docker pull ghcr.io/waspel2/nipa_test/test-backend:v1.0
-   docker run --rm -d -p 5000:5000 ghcr.io/waspel2/nipa_test/test-frontend:v1.0
+   docker run --rm -d -p 3000:3000 ghcr.io/waspel2/nipa_test/test-frontend:v1.0
    docker run --rm -d -p 5000:5000 -e DB_HOST=host.docker.internal -e DB_USER=test_user -e DB_PASSWORD=sam1234 -e DB_NAME=nipa_test ghcr.io/waspel2/nipa_test/test-backend:v1.0
    ```
 *** youcan change `DB_HOST` `DB_USER` `DB_PASSWORD` `DB_NAME` to your env
