@@ -8,6 +8,7 @@ List of prerequisites or requirements to run the project. Include any software, 
 - npm
 - yarn
 - MySQL
+- Docker
 
 ## Installation
 
@@ -39,3 +40,15 @@ Instructions on how to use or run the project once it's set up.
 1. Access the backend API at `<your_backend_server_url>`.
 2. Open the frontend application in your web browser.
 
+### Docker
+
+To run the project with Docker:
+
+1. Pull the latest frontend and backend Docker images:
+
+   ```bash
+   docker pull ghcr.io/waspel2/nipa_test/test-frontend:v1.0
+   docker pull ghcr.io/waspel2/nipa_test/test-backend:v1.0
+   docker run --rm -it ghcr.io/waspel2/nipa_test/test-frontend:v1.0
+   docker run --rm -it ghcr.io/waspel2/nipa_test/test-backend:v1.0
+   ```
