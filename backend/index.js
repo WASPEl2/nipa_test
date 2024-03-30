@@ -29,7 +29,7 @@ app.get("/tickets", async (req, res) => {
     const [rows, fields] = await db.execute(`
       SELECT * 
       FROM tickets 
-      WHERE status != 'deleted';
+      -- WHERE status != 'deleted'; show all status
     `);
     // Send the retrieved data back to the client
     res.json(rows);
