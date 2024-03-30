@@ -14,7 +14,7 @@ List of prerequisites or requirements to run the project. Include any software, 
 
 Step-by-step instructions on how to install and set up the project on a local machine.
 
-### Docker (if using Docker)
+### Docker (if not using Docker you can skip)
 
 To run the project with Docker:
 1. Navigate to the `database` directory
