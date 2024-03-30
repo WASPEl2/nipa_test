@@ -14,13 +14,29 @@ List of prerequisites or requirements to run the project. Include any software, 
 
 Step-by-step instructions on how to install and set up the project on a local machine.
 
+### Docker (if using Docker)
+
+To run the project with Docker:
+1. Navigate to the `database` directory
+2. Copy all script and execute in mysql server
+3. Pull the latest frontend and backend Docker images:
+
+   ```bash
+   docker pull ghcr.io/waspel2/nipa_test/test-frontend:v1.0
+   docker pull ghcr.io/waspel2/nipa_test/test-backend:v1.0
+   docker run --rm -it ghcr.io/waspel2/nipa_test/test-frontend:v1.0
+   docker run --rm -it ghcr.io/waspel2/nipa_test/test-backend:v1.0
+   ```
+
 ### Backend
 
 1. Clone the repository.
-2. Navigate to the `backend` directory.
-3. Create a `.env` file with the required configurations (see `.env.example`).
-4. Install dependencies: `npm install`.
-5. Start the server: `npm start`.
+2. Navigate to the `database` directory
+2. Copy all script and execute in mysql server
+3. Navigate to the `backend` directory.
+4. Create a `.env` file with the required configurations (see `.env.example`).
+5. Install dependencies: `npm install`.
+6. Start the server: `npm start`.
 
 ### Frontend
 
@@ -40,15 +56,4 @@ Instructions on how to use or run the project once it's set up.
 1. Access the backend API at `<your_backend_server_url>`.
 2. Open the frontend application in your web browser.
 
-### Docker
 
-To run the project with Docker:
-
-1. Pull the latest frontend and backend Docker images:
-
-   ```bash
-   docker pull ghcr.io/waspel2/nipa_test/test-frontend:v1.0
-   docker pull ghcr.io/waspel2/nipa_test/test-backend:v1.0
-   docker run --rm -it ghcr.io/waspel2/nipa_test/test-frontend:v1.0
-   docker run --rm -it ghcr.io/waspel2/nipa_test/test-backend:v1.0
-   ```
